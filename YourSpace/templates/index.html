@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/public/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span>YourSpace</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="user-actions">
+            <a class="upload-button" href="{{ url_for('cursos') }}">Subir curso</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="upload-button" href="{{ url_for('perfil') }}">Perfil</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('historial') }}">Historial</a></li>
+        </ul>
+    </nav><br>
+    <div class="container">
+        <main>
+            <div class="video-thumbnail">
+                <img 
+                    src="https://img.freepik.com/vector-premium/dibujos-animados-perfil-mujer_18591-58476.jpg">
+                <span class="video-duration">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="video-info">
+                <h2 class="title">Matematicas</h2>
+                <p class="author">Integrales</p>
+                <p class="views">maya_g</p>
+                <p class="description">En este curso veremos la integración por partes</p>
+            </div>
+        </main>
+    </div><br><br>
+    <div class="container">
+        <main>
+            <div class="video-thumbnail">
+                <img src="https://img.freepik.com/vector-premium/perfil-hombre-dibujos-animados_18591-58482.jpg">
+                <span class="video-duration">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="video-info">
+                <h2 class="title">Programación</h2>
+                <p class="author">frontend</p>
+                <p class="views">pato_m</p>
+                <p class="description">En este curso veremos html y css</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

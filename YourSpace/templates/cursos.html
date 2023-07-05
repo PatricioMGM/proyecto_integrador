@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Curso</title>
+  <link rel="stylesheet" href="/public/cursos.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>YourSpace</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar">
+      <button type="submit">Buscar</button>
+    </div>
+    <div class="user-actions">
+      <a class="upload-button" href="{{ url_for('cursos') }}">Subir curso</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="upload-button" href="{{ url_for('perfil') }}">Perfil</a>
+    </div>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('historial') }}">Historial</a></li>
+    </ul>
+</nav><br>
+  <div class="container">
+    <h1 class="title">Registro de Curso</h1>
+    <form><br><br><br><br>
+      <div class="form-group">
+        <label for="materia">Materia:</label>
+        <input type="text" id="materia" name="materia" required>
+      </div><br>
+      <div class="form-group">
+        <label for="descripcionMateria">Descripción de la materia:</label><br>
+        <textarea id="descripcionMateria" name="descripcionMateria" rows="4" cols="50" required></textarea>
+      </div><br>
+      <div class="form-group">
+        <label for="descripcionTema">Descripción del tema:</label><br>
+        <textarea id="descripcionTema" name="descripcionTema" rows="4" cols="50" required></textarea>
+      </div><br>
+      <div class="form-group">
+        <label for="localizacion">Localización:</label><br>
+        <textarea id="localizacion" name="localizacion" rows="4" cols="50" required></textarea>
+      </div><br>
+      <button type="submit" class="btn-submit">Registrar Curso</button><br><br>
+    </form>
+  </div>
+</body>
+</html>

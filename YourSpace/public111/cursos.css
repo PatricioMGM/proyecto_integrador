@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #0045ba, #ff0000, #cfcfcf);
+    background-size: auto;
+    background-position: center;
+    animation: gradientAnimation 10s ease infinite;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.upload-button {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.container input,
+textarea, 
+.btn-submit {
+max-width: 80%;
+}
+
+.container {
+    justify-content: center;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.title {
+    text-align: center;
+    color: #333333;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #CCCCCC;
+    font-size: 16px;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0045ba;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #002b79;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
